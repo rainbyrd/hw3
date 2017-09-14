@@ -18,22 +18,22 @@ const modifyText = () => {
 const changeLinkAndImageAttributes = () => {
   console.log('changing link attribute')
   // YOUR CODE BELOW THIS LINE
-  document.getElementById('link1').href = links[0]
-  document.getElementById('link2').href = links[1]
-  document.getElementById('beyonce').href = links[2]
+  document.querySelector('#link1').href = links[0]
+  document.querySelector('#link2').href = links[1]
+  document.querySelector('#beyonce').src = links[2]
 
 }
 
 const changeClassAttribute = () => {
   console.log('changing class attribute')
   // YOUR CODE BELOW THIS LINE
-  document.getElementById('tweet').id = 'tweet-pink'
-
+  document.querySelector('#tweet1').className = ('tweet-pink')
+  document.querySelector('#tweet2').className = ('tweet-pink')
 }
 
 const appendElements = () => {
   console.log('appending element')
   // YOUR CODE BELOW THIS LINE
-getElementById('tweet1').append('<div> <a href="https://f17.ebook.mmart.us/">Intro to JavaScript</a> </div>')
-var newDiv = document.createElement(tagName[options])
+  document.querySelector('#tweet1').innerHTML += '<a href="https://f17.ebook.mmart.us/">Intro to JavaScript</a>'
+
 }
